@@ -1,0 +1,245 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container-nosso-lar h1 {
+  font-size: 4rem;
+}
+
+.sobre-nos-container {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.sobre-nos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  margin-left: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.content-cards {
+  padding: 20px;
+}
+
+.title-cards {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  margin-bottom: 20px;
+}
+
+.textos {
+  color: #666;
+  font-size: 16px;
+}
+
+.icone-cuidados,
+.icone-equipe,
+.icone-ambiente {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.parallax {
+  background-image: url("../img/interacaolar.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+}
+
+.servicos {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.servicos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-service-type {
+  font-size: 14px;
+  color: #6b534f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card-price {
+  background-color: #6b534f;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.title-containers {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title-containers::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6b534f;
+  margin: 20px auto 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.contato-container form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato-container form .container-inputs {
+  margin-bottom: 20px;
+}
+
+.contato-container form .container-inputs label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contato-container form .container-inputs input,
+.contato-container form .container-inputs textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contato-container form .container-inputs textarea {
+  resize: vertical;
+}
+
+.contato-container form .btn-submit {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contato-container form .btn-submit:hover {
+  background-color: #005bb5;
+}
