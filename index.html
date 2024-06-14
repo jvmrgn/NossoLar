@@ -10,6 +10,7 @@
     <link href="./css/footer.css" rel="stylesheet" type="text/css" />
     <link href="./css/reveal.css" rel="stylesheet" type="text/css" />
     <link href="./css/seta.css" rel="stylesheet" type="text/css" />
+    <link href="./css/contact.css" rel="stylesheet" type="text/css" />
 
     <title>Nosso Lar</title>
     <link rel="icon" type="image/png" href="./img/logo-clinica.png" />
@@ -17,7 +18,7 @@
 
   <body>
     <header>
-      <div class="inicio-background"></div>
+      <div class="inicio-background" id="inicio"></div>
 
       <div class="navBar-container">
         <div class="conteudos-nav">
@@ -31,7 +32,6 @@
             <a href="#inicio" class="nav link-achor">Inicio</a>
             <a href="#informacoes" class="nav link-achor">Informações</a>
             <a href="#servicos" class="nav link-achor">Serviços</a>
-            <a href="#contato" class="nav link-achor">Contato</a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
                 </p>
               </div>
               <img
-                src="./img/equipe.png"
+                src="./img/equipes.png"
                 class="icone-equipe"
                 alt="Ícone de equipe"
               />
@@ -104,7 +104,7 @@
                 </p>
               </div>
               <img
-                src="./img/ambiente.png"
+                src="./img/ambientetrabalho.png"
                 class="icone-ambiente"
                 alt="Ícone de ambiente"
               />
@@ -188,19 +188,117 @@
           </div>
         </div>
       </section>
+
+      <section class="image-gallery">
+        <div class="gallery-item">
+          <img src="./img/img1.jpg" alt="Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img3.jpg" alt="Image 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img4.jpg" alt="Image 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img5.jpg" alt="Image 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img6.jpg" alt="Image 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img7.jpg" alt="Image 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img8.jpg" alt="Image 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img9.jpg" alt="Image 9" />
+        </div>
+      </section>
+
+      <section class="company-history">
+        <div class="content-wrapper">
+          <h2>Saiba mais sobre nós</h2>
+          <p>
+            Somos uma instituição há 10 anos na cidade de Piracicaba, idealizada
+            pela enfermeira Gisele e pela assistente social Cassia, as sócias se
+            juntaram nessa caminhada priorizando o bem estar, a saúde e o
+            atendimento humanizado das idosas e seus familiares.
+          </p>
+          <p>
+            Estamos sempre em contato com os familiares, para que se sintam
+            acolhidos, tornando-se assim, o Nosso Lar uma extensão de sua casa.
+          </p>
+          <p>
+            O atendimento exclusivo para mulheres foi pensado para a qualidade
+            de vida e tranquilidade de nossas hóspedes, para que se sintam
+            realmente em suas casas e possam desfrutar de todos os momentos em
+            nossos cuidados.
+          </p>
+          <h2>Nossa estrutura</h2>
+          <p>
+            Contamos com uma casa ampla e totalmente plana e adaptada para o
+            conforto e segurança das idosas.
+          </p>
+          <p>
+            13 dormitórios - Salas de TV e refeitório - Solário e jardim - Posto
+            de enfermagem - Banheiros adaptados - Cozinha e lavanderia
+          </p>
+          <h2>O que oferecemos</h2>
+          <p>
+            6 refeições diárias elaboradas por nutricionista - Equipe de
+            técnicas de enfermagem e cuidadoras 24h - Enfermeira padrão
+            responsável e assistente social - Consulta com médica geriatra
+            quinzenalmente - Fisioterapia em grupo semanal - Atividades de
+            recreação - Hotelaria e Lavanderia - Festas em datas comemorativas
+            (ex: dia das mães, dia das mulheres, etc.)
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-wrapper">
+          <h2>Contato</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer-content">
         <div class="logo-footer">
-          <img
-            src="./img/nossolarLogo.png"
-            alt="Logo Clínica de Idosos Nosso Lar"
-          />
+          <img src="./img/image.png" alt="Logo Clínica de Idosos Nosso Lar" />
         </div>
         <div class="social-links">
-          <a href="#"><img src="./img/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="./img/instagram.png" alt="Instagram" /></a>
+          <a href="https://www.facebook.com/giselecassia.caputosampaio"
+            ><img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/nossolarpiracicaba/"
+            ><img src="./img/instagram.png" alt="Instagram"
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=19994931313&text&type=phone_number&app_absent=0"
+            ><img src="./img/whatsapp.png" alt="Whatsapp"
+          /></a>
         </div>
       </div>
       <div class="footer-bottom">
